@@ -8,7 +8,7 @@
 
 Jenkins 在安装插件的时候,经常会出现,某些插件安装失败,在分析失败日志可以发现,是因为在请求 http://updates.jenkins-ci.org 地址时,出现请求超时,从而导致的安装失败
 
-![avatar](./images/fail.png)
+![avatar](./images/fail.jpg)
 
 ### 解决思路
 
@@ -78,7 +78,7 @@ VOLUME [ "/opt/jenkins" ]
 因此在启动容器时把这个宿主机的目录挂载上去,然后 在官网下载对应版本的 jenkins.war 包 放进去,然后重启容器即可
 
 ### 最终效果
-![avatar](./images/download.png)
+![avatar](./images/download.jpg)
 ![avatar](./images/result.png)
 
 2 分钟下载安装完成了 76 了插件!!
